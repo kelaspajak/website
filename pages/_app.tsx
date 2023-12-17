@@ -55,7 +55,7 @@ function Pages({ Component, pageProps }: AppProps) {
 
   if (router.pathname.startsWith('/colors')) {
     return (
-      <Theme accentColor="pink" grayColor="gray" className="radix-themes-custom-fonts">
+      <Theme accentColor="sky" grayColor="gray" className="radix-themes-custom-fonts">
         <Favicon />
         <Component {...pageProps} />
       </Theme>

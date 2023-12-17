@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeftIcon, FigmaLogoIcon } from '@radix-ui/react-icons';
+import { FaceIcon,ArrowLeftIcon, FigmaLogoIcon } from '@radix-ui/react-icons';
 import { Box, Button, Code, Container, Flex, Section, Text } from '@radix-ui/themes';
 
 import styles from './IconsHero.module.css';
@@ -40,7 +40,7 @@ export const IconsHero = () => {
           <Line color="var(--mint-a5)" angle="90deg" offset="0, 0" />
           <Line color="var(--mint-a5)" angle="90deg" offset="1em, 0" />
 
-          <ArrowLeftIcon style={{ position: 'relative', width: '1em', height: '1em' }} />
+          <FaceIcon style={{ position: 'relative', width: '1em', height: '1em' }} />
         </Box>
       </Box>
 

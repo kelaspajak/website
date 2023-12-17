@@ -73,7 +73,7 @@ export const Swatch = ({ scale, step, style, ...props }: SwatchProps) => {
             <Box
               data-color-scale={scale}
               className={styles.SwatchTransparencyGrid}
-              style={{ height: 240 }}
+              style={{ height: 140 }}
             >
               <Box style={{ width: '100%', height: '100%', backgroundColor: cssVariable }} />
             </Box>

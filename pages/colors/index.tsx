@@ -38,7 +38,7 @@ export default function ColorsHome() {
         <style>
           {`
             :is(.dark, .dark-theme) :is(body, .radix-themes) {
-              --color-page-background: #0b0b0b;
+              --color-page-background: #0D1520;
               --color-panel-solid: var(--gray-1);
             }
           `}
@@ -52,7 +52,7 @@ export default function ColorsHome() {
           right: 0,
           height: 480,
           opacity: 0.6,
-          background: 'linear-gradient(to bottom, var(--crimson-4), var(--amber-2), transparent)',
+          background: 'linear-gradient(to bottom, var(--sky-4), var(--amber-2), transparent)',
         }}
       />
 
