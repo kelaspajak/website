@@ -10,7 +10,7 @@ import {
 import { Box, Flex, Heading, Link, Separator, Text } from '@radix-ui/themes';
 import * as React from 'react';
 import { CopyToastProvider } from './CopyToast';
-import { MainContent } from './MainContent';
+// import { MainContent } from './MainContent';
 
 import styles from './IconsPanel.module.css';
 
@@ -20,7 +20,7 @@ export const IconsPanel = () => {
       <Box
         style={{
           borderRadius: 'var(--radius-4)',
-          minHeight: 900,
+          // minHeight: 900,
           background: 'var(--color-background)',
           position: 'relative',
         }}
@@ -34,9 +34,9 @@ export const IconsPanel = () => {
             boxShadow: 'var(--shadow-5)',
           }}
         />
-        <MainContent />
+        {/* <MainContent /> */}
 
-        <Separator size="4" />
+        {/* <Separator size="4" /> */}
 
         <Box p={{ initial: '5', sm: '6' }} className={styles.IconsPanelMainSection}>
           <Box mb="5" style={{ gridColumn: '3 / 4' }}>

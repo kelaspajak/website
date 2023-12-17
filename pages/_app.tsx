@@ -12,6 +12,12 @@ import { SyntaxSchemeProvider } from '@components/Pre';
 import { Favicon } from '@components/Favicon';
 import '@radix-ui/themes/styles.css';
 import './styles.css';
+// Supports weights 100-900
+import '@fontsource-variable/inter';
+// Supports weights 400-900
+import '@fontsource-variable/alegreya';
+// Supports weights 100-800
+import '@fontsource-variable/jetbrains-mono';
 
 function Pages({ Component, pageProps }: AppProps) {
   const router = useRouter();

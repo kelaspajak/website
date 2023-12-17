@@ -91,22 +91,19 @@ export const Header = ({ children, gitHubLink, ghost }: HeaderProps) => {
           <div className={styles.HeaderProductLinksContainer}>
             <HeaderProductLink
               href="/"
-              active={router.pathname === '/' || router.pathname.startsWith('/themes')}
+              active={router.pathname === '/' || router.pathname.startsWith('/')}
             >
-              Themes
+              Home
             </HeaderProductLink>
-            <HeaderProductLink
+            {/* <HeaderProductLink
               href="/primitives"
               active={router.pathname.startsWith('/primitives')}
             >
               Primitives
             </HeaderProductLink>
-            <HeaderProductLink href="/icons" active={router.pathname.startsWith('/icons')}>
-              Icons
-            </HeaderProductLink>
             <HeaderProductLink href="/colors" active={router.pathname.startsWith('/colors')}>
               Colors
-            </HeaderProductLink>
+            </HeaderProductLink> */}
           </div>
 
           <Flex

@@ -33,8 +33,8 @@ export const Footer = () => {
               }}
             >
               A project by{' '}
-              <Link color="gray" href="https://workos.com">
-                WorkOS
+              <Link color="gray" href="https://t.me/lessummer">
+                Less Summer
               </Link>
               .
             </Heading>
@@ -48,34 +48,20 @@ export const Footer = () => {
             <li>
               <Text as="p" size="2" mt="3">
                 <NextLink href="/" passHref legacyBehavior>
-                  <Link color="gray">Themes</Link>
+                  <Link color="ruby">Pajak365</Link>
                 </NextLink>
               </Text>
             </li>
             <li>
               <Text as="p" size="2" mt="3">
                 <NextLink href="/primitives" passHref legacyBehavior>
-                  <Link color="gray">Primitives</Link>
-                </NextLink>
-              </Text>
-            </li>
-            <li>
-              <Text as="p" size="2" mt="3">
-                <NextLink href="/colors" passHref legacyBehavior>
-                  <Link color="gray">Colors</Link>
-                </NextLink>
-              </Text>
-            </li>
-            <li>
-              <Text as="p" size="2" mt="3">
-                <NextLink href="/icons" passHref legacyBehavior>
-                  <Link color="gray">Icons</Link>
+                  <Link color="gray">Diskusi Pajak</Link>
                 </NextLink>
               </Text>
             </li>
           </ul>
         </Box>
-        {isColors === false && (
+        {/* {isColors === false && (
           <Box>
             <Heading as="h6" size="3">
               Docs
@@ -156,7 +142,7 @@ export const Footer = () => {
               </li>
             </ul>
           </Box>
-        )}
+        )} */}
         <Box>
           <Heading as="h6" size="3">
             Community

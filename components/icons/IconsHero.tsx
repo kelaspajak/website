@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaceIcon,ArrowLeftIcon, FigmaLogoIcon } from '@radix-ui/react-icons';
+import { FaceIcon, ArrowLeftIcon, FigmaLogoIcon } from '@radix-ui/react-icons';
 import { Box, Button, Code, Container, Flex, Section, Text } from '@radix-ui/themes';
 
 import styles from './IconsHero.module.css';
@@ -22,76 +22,41 @@ export const IconsHero = () => {
 
       <Box className={styles.IconsHeroLinesContainer}>
         <Box className={styles.IconsHeroLines}>
-          <Line color="var(--pink-a5)" angle="0deg" offset="0, 0.467em" />
-          <Line color="var(--pink-a5)" angle="0deg" offset="0, 0.533em" />
+          <Line color="var(--sky-a3)" angle="0deg" offset="0, 0.467em" />
+          <Line color="var(--sky-a3)" angle="0deg" offset="0, 0.533em" />
 
-          <Line color="var(--pink-a5)" angle="45deg" offset="-0.288em, 0" />
-          <Line color="var(--pink-a5)" angle="45deg" offset="-0.288em, 0.090em" />
+          <Line color="var(--blue-a3)" angle="45deg" offset="-0.288em, 0" />
+          <Line color="var(--blue-a3)" angle="45deg" offset="-0.288em, 0.090em" />
 
-          <Line color="var(--pink-a5)" angle="-45deg" offset="0.622em, 0" />
-          <Line color="var(--pink-a5)" angle="-45deg" offset="0.622em, 0.090em" />
+          <Line color="var(--teal-a3)" angle="-45deg" offset="0.622em, 0" />
+          <Line color="var(--teal-a3)" angle="-45deg" offset="0.622em, 0.090em" />
 
-          <Line color="var(--pink-a5)" angle="45deg" offset="0.242em, 0" />
-          <Line color="var(--pink-a5)" angle="-45deg" offset="0.242em, 1em" />
+          <Line color="var(--sky-a3)" angle="45deg" offset="0.242em, 0" />
+          <Line color="var(--sky-a3)" angle="-45deg" offset="0.242em, 1em" />
 
-          <Line color="var(--mint-a5)" angle="0deg" offset="0, 0" />
-          <Line color="var(--mint-a5)" angle="0deg" offset="0, 1em" />
+          <Line color="var(--mint-a3)" angle="0deg" offset="0, 0" />
+          <Line color="var(--mint-a3)" angle="0deg" offset="0, 1em" />
 
-          <Line color="var(--mint-a5)" angle="90deg" offset="0, 0" />
-          <Line color="var(--mint-a5)" angle="90deg" offset="1em, 0" />
+          <Line color="var(--mint-a3)" angle="90deg" offset="0, 0" />
+          <Line color="var(--mint-a3)" angle="90deg" offset="1em, 0" />
 
-          <FaceIcon style={{ position: 'relative', width: '1em', height: '1em' }} />
+          {/* <FaceIcon style={{ position: 'relative', width: '1em', height: '1em' }} /> */}
         </Box>
       </Box>
 
       <Box position="relative">
         <Section size={{ initial: '2', md: '3' }}>
           <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
-            <Box mb="6">
-              <SerifHeading>
-                A crisp set
-                <br />
-                of 15×15 icons
-              </SerifHeading>
+            <Box mb="7">
+              <Box mb="5">
+                <SerifHeading mb="3" style={{ maxWidth: 560 }}>
+                  Konsultasi Pajak365
+                </SerifHeading>
+                <Text size="5" as="p" mb="6" color="gray" style={{ maxWidth: 520 }}>
+                  Konsultasikan pajak Anda dengan ahli, tanpa perlu datang ke kantor pajak.
+                </Text>
+              </Box>
             </Box>
-
-            <Flex align="stretch" gap="4" direction={{ initial: 'column', sm: 'row' }}>
-              <Button asChild size={{ initial: '3', xs: '4' }} color="gray" highContrast>
-                <a
-                  target="_blank"
-                  href="https://www.figma.com/file/9Df5CaFUEomVzn20gRpaX3/Radix-Icons"
-                >
-                  <FigmaLogoIcon
-                    width="20"
-                    height="20"
-                    style={{ marginLeft: -6, marginRight: -2 }}
-                  />
-                  Open in Figma
-                </a>
-              </Button>
-              <input
-                readOnly
-                onClick={(event) => event.currentTarget.select()}
-                value="npm i @radix-ui/react-icons"
-                style={{
-                  textAlign: 'center',
-                  minHeight: 40,
-                  minWidth: 'npm i @radix-ui/react-icons'.length + 'ch',
-                  boxSizing: 'content-box',
-                  fontFamily: 'var(--code-font-family)',
-                  fontSize: 'var(--font-size-3)',
-                  backgroundColor: 'var(--color-panel-solid)',
-                  borderRadius: 'var(--radius-3)',
-                  border: 0,
-                  appearance: 'none',
-                  paddingLeft: 'var(--space-4)',
-                  paddingRight: 'var(--space-4)',
-                  margin: 0,
-                  outline: 0,
-                  boxShadow: '0 0 0 1px var(--gray-a6)',
-                }}
-              />
-            </Flex>
           </Container>
         </Section>
       </Box>

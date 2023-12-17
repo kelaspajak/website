@@ -33,7 +33,7 @@ export const StatsSection = () => {
               <Text
                 style={{
                   fontSize: 'max(58px, min(80px, calc(50px + (100vw - 520px) * 0.15)))',
-                  fontFamily: '"Adobe Text Pro", serif',
+                  fontFamily: '"JetBrains Mono Variable", serif',
                   fontVariant: 'proportional-nums',
                   lineHeight: 0.85,
                   letterSpacing: '-0.05em',
@@ -61,7 +61,7 @@ export const StatsSection = () => {
               <Text
                 style={{
                   fontSize: 'max(58px, min(80px, calc(50px + (100vw - 520px) * 0.15)))',
-                  fontFamily: '"Adobe Text Pro", serif',
+                  fontFamily: '"JetBrains Mono Variable", serif',
                   fontVariant: 'proportional-nums',
                   lineHeight: 0.85,
                   letterSpacing: '-0.05em',
@@ -89,14 +89,14 @@ export const StatsSection = () => {
               <Text
                 style={{
                   fontSize: 'max(58px, min(80px, calc(50px + (100vw - 520px) * 0.15)))',
-                  fontFamily: '"Adobe Text Pro", serif',
+                  fontFamily: '"JetBrains Mono Variable", serif',
                   fontVariant: 'proportional-nums',
                   lineHeight: 0.85,
                   letterSpacing: '-0.05em',
                   marginLeft: '-0.01em',
                 }}
               >
-                10K
+                50K
                 <span style={{ fontSize: '70%', marginLeft: '0.05em', marginTop: '-0.15em' }}>
                   +
                 </span>
