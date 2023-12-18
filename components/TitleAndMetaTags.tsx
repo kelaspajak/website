@@ -11,10 +11,10 @@ type TitleAndMetaTagsProps = {
 };
 
 export function TitleAndMetaTags({
-  title = 'Radix UI',
-  description = 'Everything you need to build a design system, website or web app.',
+  title = 'Pajak365',
+  description = 'Konsultasikan pajak Anda dengan ahli, tanpa perlu datang ke kantor pajak.',
   image,
-  url = 'https://radix-ui.com',
+  url = 'https://pajak365.com',
   pathname,
 }: TitleAndMetaTagsProps) {
   const router = useRouter();

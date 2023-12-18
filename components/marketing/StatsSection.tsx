@@ -68,7 +68,7 @@ export const StatsSection = () => {
                   marginLeft: '-0.01em',
                 }}
               >
-                4000
+                25.000
                 <span style={{ fontSize: '70%', marginLeft: '0.05em', marginTop: '-0.15em' }}>
                   +
                 </span>
@@ -80,7 +80,7 @@ export const StatsSection = () => {
               size={{ initial: '2', sm: '3' }}
               mt={{ initial: '-1', sm: '0' }}
             >
-              Discord members
+              Telegram members
             </Text>
           </Box>
           <Box style={{ backgroundColor: 'var(--gray-a5)', width: 1 }} />

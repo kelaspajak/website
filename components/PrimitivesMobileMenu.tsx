@@ -4,7 +4,6 @@ import { Box, ScrollArea } from '@radix-ui/themes';
 import { DocsNav } from './DocsNav';
 import { MobileMenu } from './MobileMenu';
 import { PrimitivesHeader } from './PrimitivesHeader';
-import { PrimitivesSearchMobile } from './PrimitivesSearchMobile';
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
 
 export const PrimitivesMobileMenu = () => {
@@ -15,13 +14,6 @@ export const PrimitivesMobileMenu = () => {
       <PrimitivesHeader />
       <ScrollArea scrollbars="vertical">
         <Box pt="4" px="4" pb="9" style={{ maxWidth: '100vw' }}>
-          <Box mb="4">
-            <PrimitivesSearchMobile
-              onSearchShow={() => setMobileSearchOpen(true)}
-              onSearchHide={() => setMobileSearchOpen(false)}
-            />
-          </Box>
-
           {!mobileSearchOpen && (
             <DocsNav
               routes={[

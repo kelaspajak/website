@@ -2,15 +2,15 @@ import { IconsHeader } from '@components/IconsHeader';
 import { MobileMenu, MobileMenuProvider } from '@components/MobileMenu';
 import { TitleAndMetaTags } from '@components/TitleAndMetaTags';
 import { IconsHero } from '@components/icons/IconsHero';
-import { IconsPanel } from '@components/icons/IconsPanel';
 import { iconsRoutes } from '@lib/iconsRoutes';
-import { Box, Container, ScrollArea, Separator, Section } from '@radix-ui/themes';
+import { Box, Container, ScrollArea, Separator } from '@radix-ui/themes';
 import { Menu } from '@components/icons/Menu';
 import { DocsNav } from '@components/DocsNav';
 import { ColorsHeader } from '@components/ColorsHeader';
-import { Footer } from '@components/Footer';
 import { BenefitsSection } from '@components/marketing/BenefitsSection';
 import { StatsSection } from '@components/marketing/StatsSection';
+import { CommunitySection } from '@components/marketing/CommunitySection';
+import { CaseStudiesSection } from '@components/marketing/CaseStudiesSection';
 
 export default function Home() {
   return (
@@ -52,16 +52,21 @@ export default function Home() {
         <BenefitsSection />
         <StatsSection />
       </Box>
-      <Menu />
-      {/* <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }} pb="9">
-        <IconsPanel />
-      </Container> */}
+
       <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
+        {/* <Separator size="2" /> */}
+      </Container>
+      <CaseStudiesSection />
+
+      <CommunitySection />
+      <Menu />
+
+      {/* <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
         <Separator size="2" />
         <Section size={{ initial: '2', md: '3' }} pb="0">
           <Footer />
         </Section>
-      </Container>
+      </Container> */}
     </MobileMenuProvider>
   );
 }

@@ -111,8 +111,8 @@ function Pages({ Component, pageProps }: AppProps) {
   }
 
   return (
-    <Theme accentColor="indigo" className="radix-themes-custom-fonts">
-      <SyntaxSchemeProvider scheme="indigo">
+    <Theme accentColor="blue" className="radix-themes-custom-fonts">
+      <SyntaxSchemeProvider scheme="blue">
         <Favicon />
         <Component {...pageProps} />
       </SyntaxSchemeProvider>
