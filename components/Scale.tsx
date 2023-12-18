@@ -6,7 +6,8 @@ import tinycolor from 'tinycolor2';
 
 type Scale = Record<string, string>;
 
-const HSLA_ALPHA_REGEX = /hsla\(\s*\d{1,3}\s*,\s*\d{1,3}(?:\.\d+)?%\s*,\s*\d{1,3}(?:\.\d+)?%\s*,\s*(\d(?:\.\d+)?|\.\d+)\s*\)/;
+const HSLA_ALPHA_REGEX =
+  /hsla\(\s*\d{1,3}\s*,\s*\d{1,3}(?:\.\d+)?%\s*,\s*\d{1,3}(?:\.\d+)?%\s*,\s*(\d(?:\.\d+)?|\.\d+)\s*\)/;
 
 const toCssCasing = (str: string) =>
   str

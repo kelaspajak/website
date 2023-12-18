@@ -14,7 +14,7 @@ import '@radix-ui/themes/styles.css';
 import './styles.css';
 // Supports weights 100-900
 import '@fontsource-variable/inter';
-// Supports weights 400-900
+// Supports weights 400-900 untuk Serif Heading
 import '@fontsource-variable/alegreya';
 // Supports weights 100-800
 import '@fontsource-variable/jetbrains-mono';
@@ -111,7 +111,7 @@ function Pages({ Component, pageProps }: AppProps) {
   }
 
   return (
-    <Theme accentColor="blue" className="radix-themes-custom-fonts">
+    <Theme accentColor="blue" className="radix-themes-custom-fonts" grayColor="gray" radius="full">
       <SyntaxSchemeProvider scheme="blue">
         <Favicon />
         <Component {...pageProps} />

@@ -161,7 +161,10 @@
 }
 
 .Pre
-  :where(:global(.token.deleted):not(:global(.prefix)), :global(.token.inserted):not(:global(.prefix))) {
+  :where(
+    :global(.token.deleted):not(:global(.prefix)),
+    :global(.token.inserted):not(:global(.prefix))
+  ) {
   display: block;
   padding-inline: var(--space-4);
   margin-inline: -20px;

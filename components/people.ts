@@ -229,33 +229,35 @@ function getPeopleForColor(color: Color) {
 }
 
 function generatePeopleByColorScale() {
-  return ([
-    'tomato',
-    'red',
-    'ruby',
-    'crimson',
-    'pink',
-    'plum',
-    'purple',
-    'violet',
-    'iris',
-    'indigo',
-    'blue',
-    'sky',
-    'cyan',
-    'teal',
-    'jade',
-    'mint',
-    'green',
-    'lime',
-    'grass',
-    'brown',
-    'orange',
-    'amber',
-    'yellow',
-    'gold',
-    'bronze',
-  ] as const).reduce((peopleByColorScale, color) => {
+  return (
+    [
+      'tomato',
+      'red',
+      'ruby',
+      'crimson',
+      'pink',
+      'plum',
+      'purple',
+      'violet',
+      'iris',
+      'indigo',
+      'blue',
+      'sky',
+      'cyan',
+      'teal',
+      'jade',
+      'mint',
+      'green',
+      'lime',
+      'grass',
+      'brown',
+      'orange',
+      'amber',
+      'yellow',
+      'gold',
+      'bronze',
+    ] as const
+  ).reduce((peopleByColorScale, color) => {
     peopleByColorScale[color] = getPeopleForColor(color);
     return peopleByColorScale;
   }, {} as Record<Color, Person[]>);

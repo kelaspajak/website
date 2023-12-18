@@ -17,7 +17,7 @@ export const Footer = () => {
         <Flex align="start" direction="column" className={styles.RadixLogo} mb="5">
           <NextLink href="/" passHref legacyBehavior>
             <BoxLink>
-              <AccessibleIcon label="Radix Homepage">
+              <AccessibleIcon label="Pajak365 Homepage">
                 <RadixLogo />
               </AccessibleIcon>
             </BoxLink>
