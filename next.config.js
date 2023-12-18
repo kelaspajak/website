@@ -3,6 +3,7 @@ const glob = require('glob');
 const compareVersions = require('compare-versions');
 
 module.exports = {
+  poweredByHeader: false,
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.mjs/,
@@ -15,11 +16,6 @@ module.exports = {
   // Next.js config
   async redirects() {
     return [
-      {
-        source: '/case-studies/:slug*',
-        destination: '/primitives/case-studies/:slug*',
-        permanent: true,
-      },
       {
         source: '/colors/docs',
         destination: '/colors/docs/overview/installation',
@@ -44,36 +40,6 @@ module.exports = {
         source: '/docs/colors/:slug*',
         destination: '/colors/docs/:slug*',
         permanent: true,
-      },
-      {
-        source: '/docs/primitives',
-        destination: '/primitives/docs/overview/introduction',
-        permanent: false,
-      },
-      {
-        source: '/docs/primitives/utilities/aspect-ratio/:slug*',
-        destination: '/primitives/docs/components/aspect-ratio/:slug*',
-        permanent: true,
-      },
-      {
-        source: '/docs/primitives/utilities/label/:slug*',
-        destination: '/primitives/docs/components/label/:slug*',
-        permanent: true,
-      },
-      {
-        source: '/docs/primitives/:slug*',
-        destination: '/primitives/docs/:slug*',
-        permanent: true,
-      },
-      {
-        source: '/primitives/docs',
-        destination: '/primitives/docs/overview/introduction',
-        permanent: false,
-      },
-      {
-        source: '/themes',
-        destination: '/',
-        permanent: false,
       },
       {
         source: '/themes/docs',

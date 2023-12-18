@@ -28,7 +28,7 @@ export const StatsSection = () => {
           gap={{ initial: '4', xs: '5', sm: '6' }}
           style={{ whiteSpace: 'nowrap' }}
         >
-          <Box>
+          {/* <Box>
             <Flex asChild align="center">
               <Text
                 style={{
@@ -54,8 +54,8 @@ export const StatsSection = () => {
             >
               Monthly downloads
             </Text>
-          </Box>
-          <Box style={{ backgroundColor: 'var(--gray-a5)', width: 1 }} />
+          </Box> */}
+          {/* <Box style={{ backgroundColor: 'var(--gray-a5)', width: 1 }} /> */}
           <Box>
             <Flex asChild align="center">
               <Text
@@ -108,7 +108,7 @@ export const StatsSection = () => {
               size={{ initial: '2', sm: '3' }}
               mt={{ initial: '-1', sm: '0' }}
             >
-              GitHub stars
+              Seluruh Social Media
             </Text>
           </Box>
         </Grid>

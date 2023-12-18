@@ -9,7 +9,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prettier": "prettier --cache --write .",
+    "prettier": "prettier --write .",
     "scraper:setup": "docker run -it --name radix_algolia --env-file=./algolia/.env -e \"CONFIG=$(cat ./algolia/config.development.json | jq -r tostring)\" algolia/docsearch-scraper",
     "scraper:reset": "docker rm radix_algolia && yarn scraper:setup",
     "scraper:run": "docker start radix_algolia",

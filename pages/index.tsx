@@ -3,7 +3,7 @@ import { MobileMenu, MobileMenuProvider } from '@components/MobileMenu';
 import { TitleAndMetaTags } from '@components/TitleAndMetaTags';
 import { IconsHero } from '@components/icons/IconsHero';
 import { iconsRoutes } from '@lib/iconsRoutes';
-import { Box, Container, ScrollArea, Separator } from '@radix-ui/themes';
+import { Box, Container, Text, ScrollArea, Separator, Quote } from '@radix-ui/themes';
 import { Menu } from '@components/icons/Menu';
 import { DocsNav } from '@components/DocsNav';
 import { ColorsHeader } from '@components/ColorsHeader';
@@ -25,7 +25,7 @@ export default function Home() {
                   pages: [
                     {
                       title: 'Homepage',
-                      slug: 'index',
+                      slug: '/',
                     },
                   ],
                 },
@@ -38,13 +38,45 @@ export default function Home() {
 
       <TitleAndMetaTags
         title="Konsultasi Pajak365"
-        description="A crisp set of 15×15 icons designed by the WorkOS team."
+        description="Konsultasikan pajak Anda dengan ahli, tanpa perlu datang ke kantor pajak"
         image="icons.png"
       />
 
       <IconsHeader ghost />
 
       <IconsHero />
+
+      <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
+        <Text as="p" mb="5" size="4">
+          The goal of typography is to relate font size, line height, and line width in a
+          proportional way that maximizes beauty and makes reading easier and more pleasant. The
+          question is: What proportion(s) will give us the best results? The golden ratio is often
+          observed in nature where beauty and utility intersect; perhaps we can use this “divine”
+          proportion to enhance these attributes in our typography.
+        </Text>
+
+        <Text as="p" mb="5" size="3">
+          The goal of typography is to relate font size, line height, and line width in a
+          proportional way that maximizes beauty and makes reading easier and more pleasant. The
+          question is: What proportion(s) will give us the best results? The golden ratio is often
+          observed in nature where beauty and utility intersect; perhaps we can use this “divine”
+          proportion to enhance these attributes in our typography.
+        </Text>
+
+        <Text as="p" size="2" mb="5" color="gray">
+          The goal of typography is to relate font size, line height, and line width in a
+          proportional way that maximizes beauty and makes reading easier and more pleasant. The
+          question is: What proportion(s) will give us the best results? The golden ratio is often
+          observed in nature where beauty and utility intersect; perhaps we can use this “divine”
+          proportion to enhance these attributes in our typography.
+        </Text>
+        <Text as="p" size="9" color="crimson" highContrast>
+          His famous quote,{' '}
+          <Quote>Styles come and go. Good design is a language, not a style</Quote>, elegantly summs
+          up Massimos philosophy of design.
+        </Text>
+      </Container>
+
       <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
         <Separator size="2" />
       </Container>
