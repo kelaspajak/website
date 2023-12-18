@@ -16,8 +16,6 @@
     "scraper:production": "docker run -it --env-file=./algolia/.env -e \"CONFIG=$(cat ./algolia/config.json | jq -r tostring)\" algolia/docsearch-scraper"
   },
   "dependencies": {
-    "@algolia/autocomplete-core": "^1.7.1",
-    "@algolia/autocomplete-preset-algolia": "^1.7.1",
     "@fontsource-variable/alegreya": "^5.0.9",
     "@fontsource-variable/inter": "^5.0.16",
     "@fontsource-variable/jetbrains-mono": "^5.0.19",
