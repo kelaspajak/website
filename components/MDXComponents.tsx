@@ -11,7 +11,6 @@ import { HeroContainer } from './HeroContainer';
 import { HeroQuote } from './HeroQuote';
 import { Frontmatter } from 'types/frontmatter';
 import { ColorScale, ColorScaleGroup } from './Scale';
-import * as Demos from './demos';
 import { CssVariablesTable } from './CssVariablesTable';
 import { DataAttributesTable } from './DataAttributesTable';
 import { PreWithCopyButton } from './PreWithCopyButton';
@@ -105,11 +104,14 @@ export const components = {
   },
   hr: (props) => <Separator size="2" {...props} my="6" style={{ marginInline: 'auto' }} />,
   ul: (props) => <ul {...props} className={styles.List} />,
-  ol: (props) => ({ children, ...props }) => (
-    <Box {...props} mb="3" pl="4" asChild>
-      <ol children={children} />
-    </Box>
-  ),
+  ol:
+    (props) =>
+    ({ children, ...props }) =>
+      (
+        <Box {...props} mb="3" pl="4" asChild>
+          <ol children={children} />
+        </Box>
+      ),
   li: (props) => (
     <li className={styles.ListItem}>
       <Text {...props} />
@@ -186,7 +188,6 @@ export const components = {
   PRLink,
   HeroContainer,
   HeroQuote,
-  ...Demos,
 };
 
 const LinkHeading = ({
