@@ -7,10 +7,10 @@ import { Box, Container, ScrollArea, Separator } from '@radix-ui/themes';
 import { Menu } from '@components/icons/Menu';
 import { DocsNav } from '@components/DocsNav';
 import { ColorsHeader } from '@components/ColorsHeader';
-import { BenefitsSection } from '@components/marketing/BenefitsSection';
-import { StatsSection } from '@components/marketing/StatsSection';
-import { CommunitySection } from '@components/marketing/CommunitySection';
-import { CaseStudiesSection } from '@components/marketing/CaseStudiesSection';
+import { StatsSection } from '@components/icons/StatsSection';
+import { CommunitySection } from '@components/icons/CommunitySection';
+import { BenefitsSection } from '@components/icons/BenefitsSection';
+import { CaseStudiesSection } from '@components/icons/CaseStudiesSection';
 
 export default function Home() {
   return (

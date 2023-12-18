@@ -3,8 +3,8 @@ import { MobileMenuProvider } from '@components/MobileMenu';
 import { PrimitivesHeader } from '@components/PrimitivesHeader';
 import { PrimitivesMobileMenu } from '@components/PrimitivesMobileMenu';
 import { TitleAndMetaTags } from '@components/TitleAndMetaTags';
-import { CaseStudyLogo } from '@components/marketing/CaseStudyLogo';
-import { LogoLink } from '@components/marketing/LogoLink';
+import { CaseStudyLogo } from '@components/icons/CaseStudyLogo';
+import { LogoLink } from '@components/icons/LogoLink';
 import { Root as AccessibleIcon } from '@radix-ui/react-accessible-icon';
 import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 import {
