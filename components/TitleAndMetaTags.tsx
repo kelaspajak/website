@@ -33,7 +33,7 @@ export function TitleAndMetaTags({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={imageUrl} />
 
-      <meta name="twitter:site" content="@radix_ui" />
+      <meta name="twitter:site" content="@lesssummer" />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
   );
