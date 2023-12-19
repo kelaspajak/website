@@ -7,6 +7,7 @@ import { Menu } from '@components/icons/Menu';
 import { DocsNav } from '@components/DocsNav';
 import { ColorsHeader } from '@components/ColorsHeader';
 import { CaseStudiesSection } from '@components/icons/CaseStudiesSection';
+import { statsRoutes } from '@lib/StatsRoutes';
 
 export default function Home() {
   return (
