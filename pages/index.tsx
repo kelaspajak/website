@@ -2,13 +2,11 @@ import { IconsHeader } from '@components/IconsHeader';
 import { MobileMenu, MobileMenuProvider } from '@components/MobileMenu';
 import { TitleAndMetaTags } from '@components/TitleAndMetaTags';
 import { IconsHero } from '@components/icons/IconsHero';
-import { statsRoutes } from '@lib/StatsRoutes';
 import { Box, Container, Text, ScrollArea, Separator } from '@radix-ui/themes';
 import { Menu } from '@components/icons/Menu';
 import { DocsNav } from '@components/DocsNav';
 import { ColorsHeader } from '@components/ColorsHeader';
 import { CaseStudiesSection } from '@components/icons/CaseStudiesSection';
-import { MenuStats } from '@components/icons/MenuStats';
 
 export default function Home() {
   return (
@@ -52,8 +50,7 @@ export default function Home() {
       </Container>
 
       <CaseStudiesSection />
-      {/* <Menu /> */}
-      <MenuStats routes={[...statsRoutes]} />
+      <Menu />
       {/* <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
         <Separator size="2" />
         <Section size={{ initial: '2', md: '3' }} pb="0">
