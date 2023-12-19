@@ -9,7 +9,7 @@ export const SerifHeading = (props: React.ComponentPropsWithRef<typeof Heading>)
       style={
         {
           '--heading-font-family': "'Alegreya Variable', serif",
-          '--heading-font-size-adjust': '1.1',
+          '--heading-font-size-adjust': '1.2',
           ...props.style,
         } as React.CSSProperties
       }

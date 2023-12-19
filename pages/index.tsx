@@ -3,15 +3,12 @@ import { MobileMenu, MobileMenuProvider } from '@components/MobileMenu';
 import { TitleAndMetaTags } from '@components/TitleAndMetaTags';
 import { IconsHero } from '@components/icons/IconsHero';
 import { iconsRoutes } from '@lib/iconsRoutes';
-import { Box, Container, Text, ScrollArea, Separator, Quote } from '@radix-ui/themes';
+import { Box, Container, Text, ScrollArea, Separator } from '@radix-ui/themes';
 import { Menu } from '@components/icons/Menu';
 import { DocsNav } from '@components/DocsNav';
 import { ColorsHeader } from '@components/ColorsHeader';
 import { StatsSection } from '@components/icons/StatsSection';
-import { CommunitySection } from '@components/icons/CommunitySection';
 import { BenefitsSection } from '@components/icons/BenefitsSection';
-import { CaseStudiesSection } from '@components/icons/CaseStudiesSection';
-import { Pricing } from '@components/icons/Pricing';
 
 export default function Home() {
   return (
@@ -47,16 +44,10 @@ export default function Home() {
 
       <IconsHero />
 
-      <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
-        <Text
-          as="p"
-          size={{ initial: '5', xs: '6', sm: '7', md: '9' }}
-          color="crimson"
-          highContrast
-        >
-          His famous quote,{' '}
-          <Quote>Styles come and go. Good design is a language, not a style</Quote>, elegantly summs
-          up Massimos philosophy of design.
+      <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }} mb="3">
+        <Text as="p" size={{ initial: '6', xs: '6', sm: '7', md: '9' }} color="blue" highContrast>
+          One stop untuk konsultasi perpajakan, update aturan perpajakan, dan dukungan aplikasi
+          perpajakan.
         </Text>
       </Container>
 
@@ -68,17 +59,17 @@ export default function Home() {
         <StatsSection />
       </Box>
 
-      <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
+      {/* <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
         <Separator size="2" />
       </Container>
-      <Box style={{ overflow: 'hidden' }}>
+<Box style={{ overflow: 'hidden' }}>
         <CommunitySection />
       </Box>
-      <CaseStudiesSection />
+      <CaseStudiesSection /> */}
 
       <Menu />
 
-      <Pricing />
+      {/* <Pricing /> */}
       {/* <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
         <Separator size="2" />
         <Section size={{ initial: '2', md: '3' }} pb="0">

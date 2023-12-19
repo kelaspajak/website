@@ -22,14 +22,14 @@ export const IconsHero = () => {
 
       <Box className={styles.IconsHeroLinesContainer}>
         <Box className={styles.IconsHeroLines}>
-          <Line color="var(--sky-a3)" angle="0deg" offset="0, 0.467em" />
+          {/* <Line color="var(--sky-a3)" angle="0deg" offset="0, 0.467em" />
           <Line color="var(--sky-a3)" angle="0deg" offset="0, 0.533em" />
 
           <Line color="var(--blue-a3)" angle="45deg" offset="-0.288em, 0" />
           <Line color="var(--blue-a3)" angle="45deg" offset="-0.288em, 0.090em" />
 
           <Line color="var(--teal-a3)" angle="-45deg" offset="0.622em, 0" />
-          <Line color="var(--teal-a3)" angle="-45deg" offset="0.622em, 0.090em" />
+          <Line color="var(--teal-a3)" angle="-45deg" offset="0.622em, 0.090em" /> */}
 
           <Line color="var(--sky-a3)" angle="45deg" offset="0.242em, 0" />
           <Line color="var(--sky-a3)" angle="-45deg" offset="0.242em, 1em" />
@@ -49,7 +49,7 @@ export const IconsHero = () => {
           <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
             <Box mb="7">
               <Box mb="5">
-                <SerifHeading mb="3" style={{ maxWidth: 560 }}>
+                <SerifHeading mb="3" style={{ maxWidth: 620 }}>
                   Konsultasi Pajak365
                 </SerifHeading>
                 <Text size="5" as="p" mb="6" color="gray" style={{ maxWidth: 520 }}>
