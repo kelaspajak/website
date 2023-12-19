@@ -21,7 +21,7 @@
 :global(:where(.dark, .dark-theme)) .StatsSection {
   --stats-section-background-3: var(--blue-a3);
   --stats-section-background-2: var(--plum-a3);
-  --stats-section-background-1: var(--crimson-a5);
+  --stats-section-background-1: var(--ruby-a5);
   --stats-section-chart-line-start-color: var(--plum-5);
 }
 

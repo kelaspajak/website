@@ -16,7 +16,7 @@ export const IconsHero = () => {
           right: 0,
           height: 480,
           opacity: 0.6,
-          background: 'linear-gradient(to bottom, var(--mint-a2), transparent)',
+          background: 'linear-gradient(to bottom, var(--mint-a5), transparent)',
         }}
       />
 
@@ -31,16 +31,22 @@ export const IconsHero = () => {
           <Line color="var(--teal-a3)" angle="-45deg" offset="0.622em, 0" />
           <Line color="var(--teal-a3)" angle="-45deg" offset="0.622em, 0.090em" /> */}
 
-          <Line color="var(--sky-a3)" angle="45deg" offset="0.242em, 0" />
+          {/* <Line color="var(--sky-a3)" angle="45deg" offset="0.242em, 0" />
           <Line color="var(--sky-a3)" angle="-45deg" offset="0.242em, 1em" />
 
           <Line color="var(--mint-a3)" angle="0deg" offset="0, 0" />
-          <Line color="var(--mint-a3)" angle="0deg" offset="0, 1em" />
+          <Line color="var(--mint-a3)" angle="0deg" offset="0, 1em" /> */}
 
-          <Line color="var(--mint-a3)" angle="90deg" offset="0, 0" />
-          <Line color="var(--mint-a3)" angle="90deg" offset="1em, 0" />
+          {/* <Line color="var(--mint-a3)" angle="90deg" offset="0, 0" />
+          <Line color="var(--mint-a3)" angle="90deg" offset="1em, 0" /> */}
 
           {/* <FaceIcon style={{ position: 'relative', width: '1em', height: '1em' }} /> */}
+        </Box>
+
+        <Box className={styles.IconsHeroLines}>
+          <Circle color="var(--sky-a6)" offset="0.622em, 0" size="10px" />
+          <Circle color="var(--sky-a6)" offset="1.00em, 0" size="105px" />
+          <Circle color="var(--sky-a5)" offset="0.700em, 0" size="135px" />
         </Box>
       </Box>
 
@@ -82,6 +88,30 @@ const Line = ({ angle = '0deg', offset = '0px, 0px', color }: LineProps) => {
         transform: `translate(${offset}) rotate(${angle}) translate(-50%, -50%)`,
         transformOrigin: 'top left',
         backgroundColor: color,
+      }}
+    />
+  );
+};
+
+type CircleProps = {
+  color?: string;
+  offset: string;
+  size?: string;
+};
+const Circle = ({ offset = '0px, 0px', size = '100px', color }: CircleProps) => {
+  return (
+    <Box
+      style={{
+        top: 0,
+        left: 0,
+        width: size,
+        height: size,
+        borderRadius: '50%',
+        transform: `translate(${offset}) translate(-50%, -50%)`,
+        // borderColor: color,
+        borderWidth: '2px',
+        borderColor: color,
+        borderStyle: 'solid',
       }}
     />
   );

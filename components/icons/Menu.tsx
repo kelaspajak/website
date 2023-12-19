@@ -1,13 +1,34 @@
 import React from 'react';
-import {
-  CubeIcon,
-  DownloadIcon,
-  FigmaLogoIcon,
-  GitHubLogoIcon,
-  IconJarLogoIcon,
-  SketchLogoIcon,
-} from '@radix-ui/react-icons';
+import { EyeOpenIcon, Half2Icon, MoonIcon, ValueNoneIcon } from '@radix-ui/react-icons';
 import { Flex, Link } from '@radix-ui/themes';
+
+const stats = [
+  {
+    id: 1,
+    name: 'Tidak ada SP2DK',
+    description: 'Tidak ada SP2DK untuk WP yang tidak pernah diterbitkan SP2DK',
+    icon: <EyeOpenIcon />,
+  },
+  {
+    id: 2,
+    name: 'SP2DK selesai tanpa KB',
+    description: "Front of men's Basic Tee in black.",
+    icon: <MoonIcon />,
+  },
+  {
+    id: 3,
+    name: 'SKP Nihil',
+    description: 'Dari temuan SP2DK bernilai puluhan milyar menjadi SKP Nihil',
+    icon: <Half2Icon />,
+  },
+  {
+    id: 4,
+    name: 'Penghapusan Sanksi 100%',
+    description: 'Dari temuan SP2DK bernilai puluhan milyar menjadi SKP Nihil',
+    icon: <ValueNoneIcon />,
+  },
+  // More stats...
+];
 
 export const Menu = () => {
   return (
@@ -32,86 +53,21 @@ export const Menu = () => {
           userSelect: 'none',
         }}
       >
-        <Flex align="center" gap="2" asChild>
-          <Link
-            size="2"
-            underline="hover"
-            href="https://www.figma.com/file/9Df5CaFUEomVzn20gRpaX3/Radix-Icons"
-            target="_blank"
-            highContrast
-            color="gray"
-          >
-            <FigmaLogoIcon />
-            Open in Figma
-          </Link>
-        </Flex>
-        <Flex align="center" gap="2" asChild>
-          <Link
-            size="2"
-            underline="hover"
-            href="https://raw.githubusercontent.com/radix-ui/icons/master/Radix-Icons.sketch"
-            target="_blank"
-            highContrast
-            color="gray"
-          >
-            <SketchLogoIcon />
-            Download for Sketch
-          </Link>
-        </Flex>
-
-        <Flex align="center" gap="2" asChild>
-          <Link
-            size="2"
-            underline="hover"
-            href="https://raw.githubusercontent.com/radix-ui/icons/master/Radix-Icons.iconjar.zip"
-            target="_blank"
-            highContrast
-            color="gray"
-          >
-            <IconJarLogoIcon />
-            Download IconJar
-          </Link>
-        </Flex>
-
-        <Flex align="center" gap="2" asChild>
-          <Link
-            size="2"
-            underline="hover"
-            href="https://raw.githubusercontent.com/radix-ui/icons/master/radix-icons.zip"
-            target="_blank"
-            highContrast
-            color="gray"
-          >
-            <DownloadIcon />
-            Download SVG
-          </Link>
-        </Flex>
-        <Flex align="center" gap="2" asChild>
-          <Link
-            size="2"
-            underline="hover"
-            href="https://www.npmjs.com/package/@radix-ui/react-icons"
-            target="_blank"
-            highContrast
-            color="gray"
-          >
-            <CubeIcon />
-            Install with npm
-          </Link>
-        </Flex>
-        <Flex align="center" gap="2" asChild>
-          <Link
-            size="2"
-            underline="hover"
-            href="https://github.com/radix-ui/icons"
-            target="_blank"
-            highContrast
-            color="gray"
-          >
-            <GitHubLogoIcon />
-            View on GitHub
-          </Link>
-        </Flex>
+        {stats.map((stat) => (
+          <Flex key={stat.id} align="center" gap="2" asChild>
+            <Link
+              size="2"
+              underline="hover"
+              href="https://github.com/radix-ui/icons"
+              target="_blank"
+              highContrast
+              color="gray"
+            >
+              {stat.icon}
+              {stat.name}
+            </Link>
+          </Flex>
+        ))}
       </Flex>
     </Flex>
   );

@@ -2,13 +2,13 @@ import { IconsHeader } from '@components/IconsHeader';
 import { MobileMenu, MobileMenuProvider } from '@components/MobileMenu';
 import { TitleAndMetaTags } from '@components/TitleAndMetaTags';
 import { IconsHero } from '@components/icons/IconsHero';
-import { iconsRoutes } from '@lib/iconsRoutes';
+import { statsRoutes } from '@lib/StatsRoutes';
 import { Box, Container, Text, ScrollArea, Separator } from '@radix-ui/themes';
 import { Menu } from '@components/icons/Menu';
 import { DocsNav } from '@components/DocsNav';
 import { ColorsHeader } from '@components/ColorsHeader';
-import { StatsSection } from '@components/icons/StatsSection';
-import { BenefitsSection } from '@components/icons/BenefitsSection';
+import { CaseStudiesSection } from '@components/icons/CaseStudiesSection';
+import { MenuStats } from '@components/icons/MenuStats';
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
                     },
                   ],
                 },
-                ...iconsRoutes,
+                ...statsRoutes,
               ]}
             />
           </Box>
@@ -46,30 +46,14 @@ export default function Home() {
 
       <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }} mb="3">
         <Text as="p" size={{ initial: '6', xs: '6', sm: '7', md: '9' }} color="blue" highContrast>
-          One stop untuk konsultasi perpajakan, update aturan perpajakan, dan dukungan aplikasi
-          perpajakan.
+          One stop solution untuk konsultasi perpajakan, update aturan perpajakan, dan dukungan
+          aplikasi perpajakan.
         </Text>
       </Container>
 
-      <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
-        <Separator size="2" />
-      </Container>
-      <Box style={{ overflow: 'hidden' }}>
-        <BenefitsSection />
-        <StatsSection />
-      </Box>
-
-      {/* <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
-        <Separator size="2" />
-      </Container>
-<Box style={{ overflow: 'hidden' }}>
-        <CommunitySection />
-      </Box>
-      <CaseStudiesSection /> */}
-
-      <Menu />
-
-      {/* <Pricing /> */}
+      <CaseStudiesSection />
+      {/* <Menu /> */}
+      <MenuStats routes={[...statsRoutes]} />
       {/* <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
         <Separator size="2" />
         <Section size={{ initial: '2', md: '3' }} pb="0">

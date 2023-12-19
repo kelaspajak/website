@@ -1,6 +1,28 @@
 import { Grid, Box, Container, Section, Flex, Text } from '@radix-ui/themes';
 import styles from './StatsSection.module.css';
 
+const stats = [
+  {
+    id: 1,
+    value: '0 SP2DK',
+    name: 'Basic Tee',
+    description: "Front of men's Basic Tee in black.",
+  },
+  {
+    id: 2,
+    value: '100%',
+    name: 'Basic Tee',
+    description: "Front of men's Basic Tee in black.",
+  },
+  {
+    id: 3,
+    value: '500M',
+    name: 'Basic Tee',
+    description: "Front of men's Basic Tee in black.",
+  },
+  // More stats...
+];
+
 export const StatsSection = () => {
   return (
     <Section size="2" className={styles.StatsSection}>
@@ -21,12 +43,14 @@ export const StatsSection = () => {
       <FancyBackgroundChart />
       <Container position="relative" mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
         <Grid
-          width="min-content"
-          align="stretch"
-          justify="start"
-          flow={{ initial: 'row', xs: 'column' }}
-          gap={{ initial: '4', xs: '5', sm: '6' }}
-          style={{ whiteSpace: 'nowrap' }}
+          columns={{ sm: '3' }}
+          gap={{ initial: '7', sm: '6', md: '9' }}
+          // width="min-content"
+          // align="stretch"
+          // justify="start"
+          // flow={{ initial: 'row', xs: 'column' }}
+          // gap={{ initial: '4', xs: '5', sm: '6' }}
+          // style={{ whiteSpace: 'nowrap' }}
         >
           {/* <Box>
             <Flex asChild align="center">
@@ -56,61 +80,35 @@ export const StatsSection = () => {
             </Text>
           </Box> */}
           {/* <Box style={{ backgroundColor: 'var(--gray-a5)', width: 1 }} /> */}
-          <Box>
-            <Flex asChild align="center">
-              <Text
-                style={{
-                  fontSize: 'max(58px, min(80px, calc(50px + (100vw - 520px) * 0.15)))',
-                  fontFamily: '"JetBrains Mono Variable", serif',
-                  fontVariant: 'proportional-nums',
-                  lineHeight: 0.85,
-                  letterSpacing: '-0.05em',
-                  marginLeft: '-0.01em',
-                }}
-              >
-                25.000
-                <span style={{ fontSize: '70%', marginLeft: '0.05em', marginTop: '-0.15em' }}>
+          {stats.map((stat) => (
+            <Box key={stat.id}>
+              <Flex asChild align="center">
+                <Text
+                  style={{
+                    fontSize: 'max(58px, min(80px, calc(50px + (100vw - 520px) * 0.15)))',
+                    fontFamily: '"JetBrains Mono Variable", serif',
+                    fontVariant: 'proportional-nums',
+                    lineHeight: 0.85,
+                    letterSpacing: '-0.05em',
+                    marginLeft: '-0.01em',
+                  }}
+                >
+                  {stat.value}
+                  {/* <span style={{ fontSize: '70%', marginLeft: '0.05em', marginTop: '-0.15em' }}>
                   +
-                </span>
-              </Text>
-            </Flex>
-            <Text
-              as="div"
-              color="gray"
-              size={{ initial: '2', sm: '3' }}
-              mt={{ initial: '-1', sm: '0' }}
-            >
-              Telegram members
-            </Text>
-          </Box>
-          <Box style={{ backgroundColor: 'var(--gray-a5)', width: 1 }} />
-          <Box>
-            <Flex asChild align="center">
+                </span> */}
+                </Text>
+              </Flex>
               <Text
-                style={{
-                  fontSize: 'max(58px, min(80px, calc(50px + (100vw - 520px) * 0.15)))',
-                  fontFamily: '"JetBrains Mono Variable", serif',
-                  fontVariant: 'proportional-nums',
-                  lineHeight: 0.85,
-                  letterSpacing: '-0.05em',
-                  marginLeft: '-0.01em',
-                }}
+                as="div"
+                color="gray"
+                size={{ initial: '2', sm: '3' }}
+                mt={{ initial: '-1', sm: '0' }}
               >
-                50K
-                <span style={{ fontSize: '70%', marginLeft: '0.05em', marginTop: '-0.15em' }}>
-                  +
-                </span>
+                {stat.description}
               </Text>
-            </Flex>
-            <Text
-              as="div"
-              color="gray"
-              size={{ initial: '2', sm: '3' }}
-              mt={{ initial: '-1', sm: '0' }}
-            >
-              Seluruh Social Media
-            </Text>
-          </Box>
+            </Box>
+          ))}
         </Grid>
       </Container>
     </Section>
