@@ -14,7 +14,7 @@ export const IconsHero = () => {
           right: 0,
           height: 480,
           opacity: 0.6,
-          background: 'linear-gradient(to bottom, var(--teal-a5), transparent)',
+          // background: 'linear-gradient(to bottom, var(--teal-a5), transparent)',
         }}
       />
 
@@ -26,7 +26,7 @@ export const IconsHero = () => {
                 <SerifHeading mb="3" style={{ maxWidth: 720 }}>
                   Konsultasi Pajak365
                 </SerifHeading>
-                <Text size="5" as="p" mb="6" color="gray" style={{ maxWidth: 520 }}>
+                <Text size="5" as="p" mb="6" style={{ maxWidth: 520 }}>
                   Konsultasikan pajak Anda dengan ahli, tanpa perlu datang ke kantor pajak.
                 </Text>
               </Box>

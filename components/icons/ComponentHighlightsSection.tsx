@@ -1,7 +1,7 @@
 import React from 'react';
 import { CheckIcon, LightningBoltIcon } from '@radix-ui/react-icons';
 import { MarketingCaption } from './MarketingCaption';
-import { Box, Flex, Grid, Container, Section, Heading, Text } from '@radix-ui/themes';
+import { Box, Flex, Grid, Container, Section, Heading, Text, Avatar } from '@radix-ui/themes';
 import { HiddenScroll } from './HiddenScroll';
 
 export const ComponentHighlightsSection = () => {
@@ -15,11 +15,15 @@ export const ComponentHighlightsSection = () => {
       <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
         <Flex direction="column" align="center" position="relative" mb="6" pb={{ lg: '9' }}>
           <MarketingCaption mb="1">Case in point</MarketingCaption>
-          <Heading align="center" as="h2" size="7" mb="3">
-            So, you think you can <span style={{ whiteSpace: 'nowrap' }}>build a dropdown?</span>
+          <Heading align="center" as="h2" size="7" mb="3" style={{ maxWidth: 640 }}>
+            Kami memulai kepatuhan dengan mengerjakan hal-hal kecil.{' '}
+            <span style={{ whiteSpace: 'nowrap' }}>
+              Dimulai dari aspek perpajakan per transaksi.
+            </span>
           </Heading>
-          <Text align="center" as="p" size="3" style={{ maxWidth: 340 }}>
-            We agonise over API design, performance, and accessibility so you don't need to.
+          <Text align="center" as="p" size="3" style={{ maxWidth: 540 }}>
+            Setiap Wajib Pajak memiliki keunikan nya masing-masing. Begitupun kewajiban
+            perpajakannya
           </Text>
         </Flex>
 
@@ -59,11 +63,16 @@ export const ComponentHighlightsSection = () => {
               position="relative"
               style={{ height: 'var(--component-highlights-image-height, auto)' }}
             >
-              <img
+              <Avatar
+                style={{ height: '200px', width: '200px' }}
+                src="/djponline.jpg"
+                fallback="djponline"
+              />
+              {/* <img
                 height="200px"
                 src="/djponline.jpg"
                 alt="A dropdown menu example with a checked item and a submenu"
-              />
+              /> */}
             </Flex>
           </Box>
 
@@ -95,7 +104,7 @@ export const ComponentHighlightsSection = () => {
                   </Heading>
                 </Flex>
                 <Text as="p" size="2" ml="6">
-                  Dukungan satu tahun untuk jumlah permintaan yang tidak terbatas
+                  Dukungan satu tahun untuk jumlah permintaan yang tidak terbatas.
                 </Text>
               </Box>
 
@@ -115,8 +124,8 @@ export const ComponentHighlightsSection = () => {
                   </Heading>
                 </Flex>
                 <Text as="p" size="2" ml="6">
-                  Dapatkan bantuan real-time dari kami langsung di komputer atau perangkat seluler
-                  Anda.
+                  Wajib Pajak mendapatkan bantuan real-time dari kami, langsung di komputer atau
+                  perangkat seluler.
                 </Text>
               </Box>
 
@@ -136,8 +145,8 @@ export const ComponentHighlightsSection = () => {
                   </Heading>
                 </Flex>
                 <Text as="p" size="2" ml="6">
-                  Anda dapat menghubungi kami segera atau sesuai keinginan Anda, atau Anda dapat
-                  menjadwalkan waktu agar kami menghubungi Anda.
+                  Untuk kasus tertentu yang membutuhkan penjelasan lengkap. kami juga memberikan
+                  layanan via telepon.
                 </Text>
               </Box>
 
@@ -157,8 +166,8 @@ export const ComponentHighlightsSection = () => {
                   </Heading>
                 </Flex>
                 <Text as="p" size="2" ml="6">
-                  Untuk pertanyaan yang lebih jelas — tentang sebuah transaksi, misalnya — kirimkan
-                  email kepada kami dan kami akan segera membalas dengan solusinya.
+                  Untuk pertanyaan yang lebih lengkap — tentang sebuah transaksi, misalnya — email
+                  merupakan sarana terbaik dan kami akan segera membalas dengan solusinya.
                 </Text>
               </Box>
 
@@ -178,8 +187,8 @@ export const ComponentHighlightsSection = () => {
                   </Heading>
                 </Flex>
                 <Text as="p" size="2" ml="6">
-                  Resume aspek perpajakan perusahaan Anda. Tidak masalah jika ada pergantian admin
-                  perpajakan.
+                  Dari setiap pertanyaan dan jawaban, akan tersusun aspek perpajakan. Tidak masalah
+                  jika ada pergantian admin perpajakan.
                 </Text>
               </Box>
 
