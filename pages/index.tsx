@@ -8,6 +8,7 @@ import { HoverMenu } from '@components/icons/MenuHover';
 import { statistik2023 } from '@lib/Statistik2023';
 import { IconsHero } from '@components/icons/IconsHero';
 import { ComponentHighlightsSection } from '@components/icons/ComponentHighlightsSection';
+import { DeveloperExperienceSection } from '@components/icons/DeveloperExperienceSection';
 
 export default function Home() {
   return (
@@ -69,6 +70,9 @@ export default function Home() {
       <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }} pb="9">
         <ComponentHighlightsSection />
       </Container>
+
+      <DeveloperExperienceSection />
+
       {/* menu hover statistik disebelah kanan */}
       <HoverMenu routes={[...statistik2023]} />
 
