@@ -9,7 +9,7 @@ export const ColorsHeader = (props: HeaderProps) => {
     <Header gitHubLink="https://github.com/radix-ui/colors" {...props}>
       <Link
         size="2"
-        color="gray"
+        color="crimson"
         href="/colors/docs"
         highContrast={router.pathname.includes('/colors/docs')}
       >

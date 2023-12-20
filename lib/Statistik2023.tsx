@@ -1,6 +1,6 @@
 import { EyeOpenIcon, Half2Icon, MoonIcon, ValueNoneIcon } from '@radix-ui/react-icons';
 
-export const statsRoutes: RouteProps[] = [
+export const statistik2023: RouteProps[] = [
   {
     label: 'Statistik 2023',
     pages: [
