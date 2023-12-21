@@ -3,7 +3,7 @@ import { Box, Container, Section, Text } from '@radix-ui/themes';
 import NextLink from 'next/link';
 
 import { SerifHeading } from '@components/SerifHeading';
-import { ColorsMarketingButton } from '@components/ColorsMarketingButton';
+import { ColorsMarketingButton } from '@components/icons/ColorsMarketingButton';
 
 export const IconsHero = () => {
   return (

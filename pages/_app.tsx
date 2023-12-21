@@ -4,7 +4,6 @@ import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { ThemeProvider } from 'next-themes';
 import { Theme } from '@radix-ui/themes';
-import { PrimitivesDocsPage } from '@components/PrimitivesDocsPage';
 import { useAnalytics } from '@lib/analytics';
 import { CssLibPreferenceProvider } from '@components/CssLibPreference';
 import { SyntaxSchemeProvider } from '@components/Pre';
@@ -20,19 +19,6 @@ import '@fontsource-variable/jetbrains-mono';
 
 function Pages({ Component, pageProps }: AppProps) {
   const router = useRouter();
-
-  if (router.pathname.startsWith('/primitives/docs')) {
-    return (
-      <Theme accentColor="blue" grayColor="slate" className="radix-themes-custom-fonts">
-        <SyntaxSchemeProvider scheme="blue">
-          <PrimitivesDocsPage>
-            <Favicon />
-            <Component {...pageProps} />
-          </PrimitivesDocsPage>
-        </SyntaxSchemeProvider>
-      </Theme>
-    );
-  }
 
   // pakai theme
   // if (router.pathname.startsWith('/primitives')) {
@@ -56,7 +42,13 @@ function Pages({ Component, pageProps }: AppProps) {
   }
 
   return (
-    <Theme accentColor="blue" className="radix-themes-custom-fonts" grayColor="gray" radius="full">
+    <Theme
+      accentColor="gray"
+      className="radix-themes-custom-fonts"
+      grayColor="mauve"
+      radius="full"
+      panelBackground="solid"
+    >
       <SyntaxSchemeProvider scheme="blue">
         <Favicon />
         <Component {...pageProps} />
