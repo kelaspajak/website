@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 // Inspired by https://github.com/rexxars/react-refractor
 import React from 'react';
 import refractor from 'refractor/core';

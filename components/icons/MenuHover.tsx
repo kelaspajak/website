@@ -52,8 +52,8 @@ export const HoverMenu = ({ routes }: StatsNavProps) => {
             )}
 
             {section.pages.map((page) => (
-              <div>
-                <Flex key={page.slug} align="center" gap="2" asChild>
+              <div key={page.slug}>
+                <Flex align="center" gap="2" asChild>
                   <Text size="2" highContrast color="green">
                     {page.icon}
                     {page.title}

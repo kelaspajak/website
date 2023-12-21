@@ -30,7 +30,6 @@ export const LiveCode = ({ code = '', scope = {}, onRender = () => undefined }: 
 const evaluate = (code = '', scope: Record<string, unknown> = {}) => {
   const scopeKeys = Object.keys(scope);
   const scopeValues = scopeKeys.map((key) => scope[key]);
-  // eslint-disable-next-line @typescript-eslint/no-implied-eval
   const fn = new Function('React', ...scopeKeys, code);
   const result = fn(React, ...scopeValues);
   return injectReactClassComponentPrototype(result, code);
