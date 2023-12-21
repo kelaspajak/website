@@ -1,14 +1,14 @@
 import { IconsHeader } from '@components/IconsHeader';
 import { MobileMenu, MobileMenuProvider } from '@components/MobileMenu';
 import { TitleAndMetaTags } from '@components/TitleAndMetaTags';
-import { Box, Container, ScrollArea, Section, Heading, Theme } from '@radix-ui/themes';
+import { Box, Container, ScrollArea, Section, Heading } from '@radix-ui/themes';
 import { DocsNav } from '@components/DocsNav';
 import { ColorsHeader } from '@components/ColorsHeader';
 import { HoverMenu } from '@components/icons/MenuHover';
 import { statistik2023 } from '@lib/Statistik2023';
 import { IconsHero } from '@components/icons/IconsHero';
 import { ComponentHighlightsSection } from '@components/icons/ComponentHighlightsSection';
-import { DeveloperExperienceSection } from '@components/icons/DeveloperExperienceSection';
+import { BenefitsSection } from '@components/icons/BenefitsSection';
 
 export default function Home() {
   return (
@@ -67,25 +67,11 @@ export default function Home() {
         </Section>
       </Box>
 
-      <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }} pb="9">
-        <ComponentHighlightsSection />
-      </Container>
+      <ComponentHighlightsSection />
 
-      <DeveloperExperienceSection />
-
+      <BenefitsSection />
       {/* menu hover statistik disebelah kanan */}
       <HoverMenu routes={[...statistik2023]} />
-
-      {/* <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }} pb="9">
-        <IconsPanel />
-      </Container> */}
-
-      {/* <Container mx={{ initial: '5', xs: '6', sm: '7', md: '9' }}>
-        <Separator size="2" />
-        <Section size={{ initial: '2', md: '3' }} pb="0">
-          <Footer />
-        </Section>
-      </Container> */}
     </MobileMenuProvider>
   );
 }

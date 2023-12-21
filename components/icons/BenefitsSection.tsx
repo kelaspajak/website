@@ -1,5 +1,5 @@
 import { MarketingCaption } from './MarketingCaption';
-import { Box, Section, Grid, Container, Heading, Em, Text, Quote } from '@radix-ui/themes';
+import { Box, Section, Grid, Container, Heading, Em, Text } from '@radix-ui/themes';
 
 export const BenefitsSection = () => {
   return (
@@ -14,36 +14,31 @@ export const BenefitsSection = () => {
         <Box mb="7">
           <MarketingCaption mb="1">Why Radix Primitives</MarketingCaption>
           <Heading as="h2" size="7">
-            Spend less time on
-            <br />
-            undifferentiated work
+            Perusahaan yang kami tangani hampir sebagian besar karena <br />
+            sudah lelah di SP2DK atau lelah diperiksa😭
           </Heading>
         </Box>
 
         <Grid columns={{ initial: '1', sm: '2' }} gap={{ initial: '7', sm: '5' }}>
           <Box>
             <Heading as="h3" size="4" mb="2">
-              Kami selalu terdepan
-              <br />
-              menghadirkan informasi terbaru.
+              Save time. Ship faster.
             </Heading>
             <Text as="p" size="3" mr={{ sm: '5', md: '7', lg: '9' }}>
-              di Diskusi Pajak, kami terdepan dalam memberikan informasi perpajakan terbaru, memberi
-              slide perpajakan terbaru, menemukan bug dan solusi aplikasi DJP. kami hadir untuk
-              membantu perusahaan Anda
+              It takes <Em>a lot</Em> of time to develop and maintain a robust set of UI components,
+              and it's mostly undifferentiated work. Building on top of Radix components will save
+              you time and money, so you can ship a better product faster.
             </Text>
           </Box>
 
           <Box>
             <Heading as="h3" size="4" mb="2">
-              Saran sederhana yang <br />
-              mengurangi jumlah temuan pajak.
+              Focus on your product
             </Heading>
             <Text as="p" size="3" mr={{ sm: '5', md: '7', lg: '9' }}>
-              Tidak hanya memberikan masukan untuk setiap transaksi, kami juga memberikan
-              saran-saran untuk perbaikan SOP perpajakan perusahaan anda. Dengan harapan{' '}
-              <em>mengurangi jumlah</em> temuan perpajakan dalam bentuk SP2DK atau pemeriksaan
-              pajak.
+              It’s no secret that robust UI components are tricky to build. Nailing accessibility
+              details and complex logic sucks time away from product feature development. With
+              Radix, you can focus on your unique engineering challenges instead.
             </Text>
           </Box>
         </Grid>
